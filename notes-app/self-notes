@@ -1,0 +1,45 @@
+// 1st type - file export
+// require('./utils.js')
+// const name = 'kanish'
+// console.log(name)
+
+// 2nd type - file export
+// const namxe = require('./utils.js')
+// console.log(namxe)
+
+// func - export
+// const filename = require('./utils.js')
+// const sum = filename(4, 3)
+// console.log(sum)
+
+const chalk = require('chalk')
+const yargs = require('yargs')
+var validator = require('validator')
+const func = require('./notes.js')
+
+// const msg = func()
+// console.log(chalk.green.inverse(msg))
+// console.log(chalk.red.underline.bold(msg))
+
+
+// const command = process.argv[2]
+// if(command === 'add'){
+//     console.log('---adding nodes\n')
+// }
+
+console.log(process.argv)
+console.log(yargs.argv)
+console.log('\n---last line\n')
+
+
+// console.log(validator.isEmail('foor.com'))
+// console.log(validator.isURL('wwwgooglecom'))
+
+
+
+
+
+
+
+
+
