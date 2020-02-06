@@ -6,7 +6,6 @@ const notes = require('./notes.js')
 // customize yargs version
 yargs.version('1.1.0')
 
-
 // Create add command
 yargs.command({
     command: 'add',
@@ -56,8 +55,7 @@ yargs.command({
 yargs.command({
     command: 'list',
     describe: 'List your note!',
-    handler: () => console.log('List a command!')
-    
+    handler: () => notes.listNotes()
 })
 
 
@@ -65,11 +63,19 @@ yargs.command({
 yargs.command({
     command: 'read',
     describe: 'Read your note!',
-    handler: () => console.log('Read a command!')
-    
+    // handler: () => console.log('Read a command!')
+    //  
+    builder: {
+        title: {
+            describe: 'Note Title',
+            demandOption: true,
+            type: 'string'
+        }
+    },
+    handler: (argv) => notes.readNotes(argv.title) 
 })
 
-// printing two times the list
+// printing two times the list so cmted one
 // console.log(yargs.argv)
 
 
