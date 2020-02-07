@@ -10,6 +10,7 @@ const forecast = (latitude, longitude, callback) => {
 
         // console.log(response.body.features.length)
 
+
         if (error){
             callback('coonect to inetnert', undefined)
         } else if(response.body.error) {
