@@ -1,0 +1,5 @@
+to run mongodb
+/Users/Kanish07/mongodb/bin/mongod --dbpath=/Users/Kanish07/mongodb-data/
+
+to run app - start script i written in package.json
+npm run dev
