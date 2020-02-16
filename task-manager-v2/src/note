@@ -1,0 +1,9 @@
+to on mongodb
+/Users/Kanish07/mongodb/bin/mongod --dbpath=/Users/Kanish07/mongodb-data/
+
+to run -> npm run dev
+run command in package.json
+
+postman -> 10 diff request
+user - post create user, get read user single, get read user all, update user, delete user
+similar for task 
